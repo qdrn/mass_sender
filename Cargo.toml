@@ -1,0 +1,18 @@
+[package]
+name = "mas_sender"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+massa-models = { git = "https://github.com/massalabs/massa", branch = "main", package = "massa_models" }
+massa-sdk = { git = "https://github.com/massalabs/massa", branch = "main", package = "massa_sdk" }
+massa-time = { git = "https://github.com/massalabs/massa", branch = "main", package = "massa_time" }
+massa-signature = { git = "https://github.com/massalabs/massa", branch = "main", package = "massa_signature" }
+massa-wallet = { git = "https://github.com/massalabs/massa", branch = "main", package = "massa_wallet" }
+massa-api-exports = { git = "https://github.com/massalabs/massa", branch = "main", package = "massa_api_exports" }
+tokio = { version = "1.35", features = ["full"] }
+dialoguer = { version = "0.11" }
+clap = { version = "4.5", features = ["derive"] }
+csv = { version = "1.3" }
